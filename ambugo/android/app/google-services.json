@@ -1,0 +1,30 @@
+{
+  "project_info": {
+    "project_number": "163498960632",
+    "firebase_url": "https://ambugo-ac78d-default-rtdb.asia-southeast1.firebasedatabase.app",
+    "project_id": "ambugo-ac78d",
+    "storage_bucket": "ambugo-ac78d.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:163498960632:android:70f373aef65871a0373d0d",
+        "android_client_info": {
+          "package_name": "com.example.ambugoo"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAFBi4-_c3Xp7NrwDDW-z2o_gtNVGDzSvc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
