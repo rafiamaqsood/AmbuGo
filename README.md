@@ -41,19 +41,19 @@ Restores normal cycle once the emergency clears.
  ## 📸 Project Screenshots
 
 ### 🚦 Traffic Light Setup
-![Traffic Light Demo](images/traffic_light_demo.jpg)
+![Traffic Light Demo](images/traffic_light_demo.jpeg)
 
 ### 📱 AmbuGo Splash Screen
-![AmbuGo Splash Screen](images/splash screen.png)
+![AmbuGo Splash Screen](images/splash_screen.jpeg)
 
 ### 📱 AmbuGo Registration screen
-![AmbuGo Registration screen](images/registration page.png)
+![AmbuGo Registration screen](images/Registration_page.jpeg)
 
 ### 📱 AmbuGo Login screen
-![AmbuGo Login](images/Login page.png)
+![AmbuGo Login](images/Login_page.jpeg)
 
 ### 📱 AmbuGo Emergency screen
-![AmbuGo  Emergency screen](images/Emergency page.png)
+![AmbuGo  Emergency screen](images/Emergency_page.jpeg)
 
 ## 🚀 How It Works
 1. Ambulance driver registers once with **Registration Number+ Chassis Number** of ambulance in AmbuGo app.
