@@ -1,12 +1,18 @@
 # AmbuGo
-Smart traffic light system for **Ambulances**  using ESP32 +Firebase 
+“Saving time, saving lives”
+Smart traffic light system for **Ambulances**
 
-**AmbuGo** is a smart traffic light management system that gives ambulances priority at intersections.  
-When an ambulance driver presses the Emergency Button in the app, the system:
-Sends live ambulance data to Firebase.
-Automatically turns the ambulance’s lane GREEN and all others RED.
-Restores normal cycle once the emergency clears.
----
+**Problem**
+Ambulances often get stuck in traffic, losing critical minutes
+Every minute of delay in an ambulance can cost a life
+Current traffic lights are static, no way to prioritize emergencies
+
+**Solution**
+My project AmbuGo solves this problem by giving ambulances priority at traffic lights 
+AmbuGo connects ambulances + traffic lights via Firebase
+Ambulance app → sends emergency alert 
+ESP32 traffic light controller → reads data from Firebase → turns green on ambulance route
+After ambulance passes, system returns to normal cycle
 
 ## ✨ Features
 - 📡 **Real-time database (Firebase)** – Stores ambulance status (`active` / `clear`) and location.  
@@ -97,15 +103,13 @@ Flutter App
 3. Run on Android device.
 
 ---
-
 🌍 **Future Improvements**
 
 📡 GSM/Lora support for offline emergency handling.
 🚦 Smart coordination between multiple intersections.
 
 ---
-
 👩‍💻 Author
-Developed by **Rafia Maqsood** 💡
+Developed by **Rafia Maqsood** 
 University of Home Economics, Lahore – Dept. of Computer Science & IT
 
