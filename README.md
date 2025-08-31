@@ -1,17 +1,17 @@
 # AmbuGo
-“Saving time, saving lives”
+“Saving time, saving lives”  
 Smart traffic light system for **Ambulances**
 
-**Problem**
-Ambulances often get stuck in traffic, losing critical minutes
-Every minute of delay in an ambulance can cost a life
+**Problem**  
+Ambulances often get stuck in traffic, losing critical minutes  
+Every minute of delay in an ambulance can cost a life  
 Current traffic lights are static, no way to prioritize emergencies
 
-**Solution**
-My project AmbuGo solves this problem by giving ambulances priority at traffic lights 
-AmbuGo connects ambulances + traffic lights via Firebase
-Ambulance app → sends emergency alert 
-ESP32 traffic light controller → reads data from Firebase → turns green on ambulance route
+**Solution**  
+My project AmbuGo solves this problem by giving ambulances priority at traffic lights   
+AmbuGo connects ambulances + traffic lights via Firebase  
+Ambulance app → sends emergency alert   
+ESP32 traffic light controller → reads data from Firebase → turns green on ambulance route  
 After ambulance passes, system returns to normal cycle
 
 ## ✨ Features
@@ -30,20 +30,20 @@ After ambulance passes, system returns to normal cycle
 
 ## 📂 Real-time database (Firebase) Structure
 ---
- {
-  "ambulances": {
-    "AMB-001": { "chassis_no": "CHS-1001", "verified": false }
-  },
-  "emergencies": {
+ {  
+  "ambulances": {  
+    "AMB-001": { "chassis_no": "CHS-1001", "verified": false }  
+  },  
+  "emergencies": {  
     "_README": "App writes here per ambulance. Keyed by reg_no, e.g., AMB-001."
-  },
-  "intersections": {
-    "_README": "ESP32 nodes can store their fixed lat/lng + state here if you wish."
-  },
-  "trafficControl": {
-    "mode": "NORMAL"
-  }
-}
+  },  
+  "intersections": {  
+    "_README": "ESP32 nodes can store their fixed lat/lng + state here if you wish."  
+  },  
+  "trafficControl": {  
+    "mode": "NORMAL"  
+  }  
+}  
  ## 📸 Project Screenshots
 
 ### 🚦 Traffic Light Setup
@@ -65,26 +65,26 @@ After ambulance passes, system returns to normal cycle
 1. Ambulance driver registers once with **Registration Number+ Chassis Number** of ambulance in AmbuGo app.
 2. Verified drivers log in using **Registraion number only**.
 3. On pressing **Emergency** status is updated in **Firebase**:  
-   {
-     "emergencies": {
-       "AMB-001": {
-         "status": "active",
-         "lat": ....,
-         "lng": ....
-       }
-     }
-   }
+   {  
+     "emergencies": {  
+       "AMB-001": {  
+         "status": "active",  
+         "lat": ....,  
+         "lng": ....  
+       }  
+     }  
+   }  
 1. ESP32 reads Firebase if status = active, the ambulance lane turns GREEN and all others turn RED.
 2. When ambulance passes (status = clear), system returns to normal cycle.
 ---
 
 📂 **Project Structure**
 
-AmbuGo/
-│── esp32_traffic                # ESP32 code (PlatformIO)
-│── ambugo                      # Flutter mobile app code
-|__images/                      # Screenshots & demo media
-│── README.md                   # Project documentation
+AmbuGo/  
+│── esp32_traffic                # ESP32 code (PlatformIO)  
+│── ambugo                      # Flutter mobile app code  
+|__images/                      # Screenshots & demo media  
+│── README.md                   # Project documentation  
 
 ---
 
@@ -105,11 +105,11 @@ Flutter App
 ---
 🌍 **Future Improvements**
 
-📡 GSM/Lora support for offline emergency handling.
-🚦 Smart coordination between multiple intersections.
+📡 GSM/Lora support for offline emergency handling.  
+🚦 Smart coordination between multiple intersections.  
 
 ---
 👩‍💻 Author
-Developed by **Rafia Maqsood** 
+Developed by **Rafia Maqsood**   
 University of Home Economics, Lahore – Dept. of Computer Science & IT
 
